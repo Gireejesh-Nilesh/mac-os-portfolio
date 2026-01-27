@@ -1,12 +1,12 @@
 import "./dock.scss";
-import githubIcon from "../assets/icons/github-icon.svg";
-import noteIcon from "../assets/icons/note-icon.svg";
-import pdfIcon from "../assets/icons/pdf-icon.svg";
-import calendarIcon from "../assets/icons/calendar-icon.svg";
-import spotifyIcon from "../assets/icons/spotify-icon.svg";
-import mailIcon from "../assets/icons/mail-icon.svg";
-import linkIcon from "../assets/icons/link-icon.svg";
-import cliIcon from "../assets/icons/cli-icon.svg";
+import githubIcon from "/doc-icons/github.svg";
+import noteIcon from "/doc-icons/note.svg";
+import pdfIcon from "/doc-icons/pdf.svg";
+import calendarIcon from "/doc-icons/calendar.svg";
+import spotifyIcon from "/doc-icons/spotify.svg";
+import mailIcon from "/doc-icons/mail.svg";
+import linkIcon from "/doc-icons/link.svg";
+import cliIcon from "/doc-icons/cli.svg";
 
 const Dock = ({ windowsState, setWindowsState }) => {
   const handleDockClick = (name) => {
