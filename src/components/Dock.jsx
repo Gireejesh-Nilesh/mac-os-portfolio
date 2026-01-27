@@ -2,7 +2,7 @@ import "./dock.scss";
 const noteIcon = "/doc-icons/note.svg";
 const pdfIcon = "/doc-icons/pdf.svg";
 const githubIcon = "/doc-icons/github.svg";
-const calendarIcon = "/doc-icons/calendar.svg";
+const calendarIcon = "/doc-icons/calender.svg";
 const spotifyIcon = "/doc-icons/spotify.svg";
 const mailIcon = "/doc-icons/mail.svg";
 const linkIcon = "/doc-icons/link.svg";
