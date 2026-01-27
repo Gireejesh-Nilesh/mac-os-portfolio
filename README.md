@@ -1,16 +1,91 @@
-# React + Vite
+# mac-os-portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A sleek, macOS-style portfolio website built with **React + Vite**. This project provides a clean, interactive portfolio interface inspired by the macOS UI.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- macOS-like interface and styling
+- Fully responsive design
+- Built with modern frontend stack
+- Easy to customize with your own content
 
-## React Compiler
+## 📦 Technologies
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React**
+- **Vite**
+- **HTML / SCSS**
+- (Additional tech such as icons or state libraries — if applicable)
 
-## Expanding the ESLint configuration
+## 📁 Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+public/
+src/
+.gitignore
+package.json
+vite.config.js
+README.md
+
+
+- `public/` — static assets
+- `src/` — React components & main app code
+- `index.html` — entry HTML file
+- `vite.config.js` — Vite build config
+
+## 💻 Installation
+
+Clone the repository:
+
+git clone https://github.com/Gireejesh-Nilesh/mac-os-portfolio.git
+Install dependencies:
+
+npm install
+
+or, if you use Yarn:
+
+yarn
+
+## 🚀 Development
+
+Start the development server with hot-reload:
+
+npm run dev
+
+
+Visit the local dev server in the browser (default):
+
+http://localhost:5173
+
+## 🛠 Production Build
+
+Build the optimized production bundle:
+
+npm run build
+
+
+The built assets will be output to the dist/ directory.
+
+## 📌 Customization
+
+Update portfolio content inside the src/ folder
+
+Replace images, icons, and personal data
+
+Update styles in the SCSS files to match your branding
+
+## 🙌 Contributing
+
+Contributions are welcome! If you want to improve styles, add new features, or fix bugs:
+
+Fork the repo
+
+Create a branch: git checkout -b feature/MyFeature
+
+Commit your changes: git commit -m "Add MyFeature"
+
+Push: git push origin feature/MyFeature
+
+Open a Pull Request
+
+## 📄 License
+
+This project is open-source and free to use. (Add your license here if applicable)
