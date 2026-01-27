@@ -1,11 +1,18 @@
 import "./dock.scss";
+import githubIcon from "../assets/icons/github-icon.svg";
+import noteIcon from "../assets/icons/note-icon.svg";
+import pdfIcon from "../assets/icons/pdf-icon.svg";
+import calendarIcon from "../assets/icons/calendar-icon.svg";
+import spotifyIcon from "../assets/icons/spotify-icon.svg";
+import mailIcon from "../assets/icons/mail-icon.svg";
+import linkIcon from "../assets/icons/link-icon.svg";
+import cliIcon from "../assets/icons/cli-icon.svg";
 
 const Dock = ({ windowsState, setWindowsState }) => {
   const handleDockClick = (name) => {
     setWindowsState((state) => {
       const win = state[name];
 
-      // Restore minimized window
       if (win.open && win.minimized) {
         return {
           ...state,
@@ -13,7 +20,6 @@ const Dock = ({ windowsState, setWindowsState }) => {
         };
       }
 
-      // Open closed window
       if (!win.open) {
         return {
           ...state,
@@ -21,7 +27,6 @@ const Dock = ({ windowsState, setWindowsState }) => {
         };
       }
 
-      // Already open → do nothing (focus later)
       return state;
     });
   };
@@ -35,7 +40,7 @@ const Dock = ({ windowsState, setWindowsState }) => {
           windowsState.github.minimized ? "minimized" : ""
         }`}
       >
-        <img src="./public/doc-icons/github.svg" alt="GitHub" />
+        <img src={githubIcon} alt="GitHub" />
       </div>
 
       {/* Notes */}
@@ -45,7 +50,7 @@ const Dock = ({ windowsState, setWindowsState }) => {
           windowsState.note.minimized ? "minimized" : ""
         }`}
       >
-        <img src="./public/doc-icons/note.svg" alt="Notes" />
+        <img src={noteIcon} alt="Notes" />
       </div>
 
       {/* Resume */}
@@ -55,7 +60,7 @@ const Dock = ({ windowsState, setWindowsState }) => {
           windowsState.resume.minimized ? "minimized" : ""
         }`}
       >
-        <img src="./public/doc-icons/pdf.svg" alt="Resume" />
+        <img src={pdfIcon} alt="Resume" />
       </div>
 
       {/* External: Calendar */}
@@ -63,7 +68,7 @@ const Dock = ({ windowsState, setWindowsState }) => {
         onClick={() => window.open("https://calendar.google.com", "_blank")}
         className="icon calendar"
       >
-        <img src="./public/doc-icons/calender.svg" alt="Calendar" />
+        <img src={calendarIcon} alt="Calendar" />
       </div>
 
       {/* Spotify */}
@@ -73,7 +78,7 @@ const Dock = ({ windowsState, setWindowsState }) => {
           windowsState.sportify.minimized ? "minimized" : ""
         }`}
       >
-        <img src="./public/doc-icons/spotify.svg" alt="Spotify" />
+        <img src={spotifyIcon} alt="Spotify" />
       </div>
 
       {/* External: Mail */}
@@ -83,7 +88,7 @@ const Dock = ({ windowsState, setWindowsState }) => {
         }
         className="icon mail"
       >
-        <img src="./public/doc-icons/mail.svg" alt="Mail" />
+        <img src={mailIcon} alt="Mail" />
       </div>
 
       {/* External: LinkedIn */}
@@ -91,22 +96,20 @@ const Dock = ({ windowsState, setWindowsState }) => {
         onClick={() =>
           window.open(
             "https://www.linkedin.com/in/gireejeshnilesh01professional/",
-            "_blank"
+            "_blank",
           )
         }
         className="icon link"
       >
-        <img src="./public/doc-icons/link.svg" alt="LinkedIn" />
+        <img src={linkIcon} alt="LinkedIn" />
       </div>
 
       {/* CLI */}
       <div
         onClick={() => handleDockClick("cli")}
-        className={`icon cli ${
-          windowsState.cli.minimized ? "minimized" : ""
-        }`}
+        className={`icon cli ${windowsState.cli.minimized ? "minimized" : ""}`}
       >
-        <img src="./public/doc-icons/cli.svg" alt="CLI" />
+        <img src={cliIcon} alt="CLI" />
       </div>
     </footer>
   );
