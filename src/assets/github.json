@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f",
+    "title": "Task Manager App",
+    "description": "A task management web app with CRUD operations and local storage support.",
+    "tags": ["React", "JavaScript", "CSS", "HTML", "JUnit", "C#"],
+    "repoLink": "https://github.com/username/task-manager",
+    "demoLink": null
+  },
+  {
+    "id": 2,
+    "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4",
+    "title": "E-commerce Website",
+    "description": "A responsive e-commerce frontend with product listing and cart functionality.",
+    "tags": ["React", "Redux", "API"],
+    "repoLink": "https://github.com/username/ecommerce-app",
+    "demoLink": "https://ecommerce-demo.vercel.app"
+  },
+  {
+    "id": 3,
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+    "title": "Portfolio Website",
+    "description": "Personal portfolio showcasing projects, skills, and contact information.",
+    "tags": ["React", "Tailwind", "Framer Motion"],
+    "repoLink": "https://github.com/username/portfolio",
+    "demoLink": "https://portfolio-demo.netlify.app"
+  },
+  {
+    "id": 4,
+    "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c",
+    "title": "Blog Platform",
+    "description": "A blog platform with markdown support and dynamic routing.",
+    "tags": ["React", "Node.js", "MongoDB"],
+    "repoLink": "https://github.com/username/blog-platform",
+    "demoLink": "https://blog-platform-demo.vercel.app"
+  },
+  {
+    "id": 5,
+    "image": "https://images.unsplash.com/photo-1518779578993-ec3579fee39f",
+    "title": "Weather App",
+    "description": "Real-time weather application using OpenWeather API.",
+    "tags": ["React", "API", "Bootstrap"],
+    "repoLink": "https://github.com/username/weather-app",
+    "demoLink": "https://weather-app-demo.netlify.app"
+  }
+]
