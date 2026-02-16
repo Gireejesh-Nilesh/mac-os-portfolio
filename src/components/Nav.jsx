@@ -1,12 +1,16 @@
 import DateTime from "./DateTime";
 import "./nav.scss";
+const base = import.meta.env.BASE_URL + "/";
+
+const appleIcon = `${base}navbar-icons/apple.svg`;
+const wifiIcon = `${base}navbar-icons/wifi.svg`;
 
 const Nav = () => {
   return (
     <nav>
       <div className="left">
         <div className="apple-icon">
-          <img src="/navbar-icons/apple.svg" alt="" />
+          <img src={appleIcon} alt="" />
         </div>
 
         <div className="nav-item">
@@ -27,7 +31,7 @@ const Nav = () => {
       </div>
       <div className="right">
         <div className="nav-icon">
-          <img src="navbar-icons/wifi.svg" alt="" />
+          <img src={wifiIcon} alt="" />
         </div>
 
         <div className="nav-item">

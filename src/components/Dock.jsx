@@ -1,12 +1,13 @@
 import "./dock.scss";
-const noteIcon = "/doc-icons/note.svg";
-const pdfIcon = "/doc-icons/pdf.svg";
-const githubIcon = "/doc-icons/github.svg";
-const calendarIcon = "/doc-icons/calender.svg";
-const spotifyIcon = "/doc-icons/spotify.svg";
-const mailIcon = "/doc-icons/mail.svg";
-const linkIcon = "/doc-icons/link.svg";
-const cliIcon = "/doc-icons/cli.svg";
+const base = import.meta.env.BASE_URL + "/";
+const noteIcon = `${base}doc-icons/note.svg`;
+const pdfIcon = `${base}doc-icons/pdf.svg`;
+const githubIcon = `${base}doc-icons/github.svg`;
+const calendarIcon = `${base}doc-icons/calender.svg`;
+const spotifyIcon = `${base}doc-icons/spotify.svg`;
+const mailIcon = `${base}doc-icons/mail.svg`;
+const linkIcon = `${base}doc-icons/link.svg`;
+const cliIcon = `${base}doc-icons/cli.svg`;
 
 const Dock = ({ windowsState, setWindowsState }) => {
   const handleDockClick = (name) => {
@@ -73,9 +74,9 @@ const Dock = ({ windowsState, setWindowsState }) => {
 
       {/* Spotify */}
       <div
-        onClick={() => handleDockClick("sportify")}
+        onClick={() => handleDockClick("spotify")}
         className={`icon spotify ${
-          windowsState.sportify.minimized ? "minimized" : ""
+          windowsState.spotify?.minimized ? "minimized" : ""
         }`}
       >
         <img src={spotifyIcon} alt="Spotify" />

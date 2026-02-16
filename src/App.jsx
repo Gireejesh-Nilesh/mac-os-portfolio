@@ -14,7 +14,8 @@ const App = () => {
     github: { open: false, minimized: false },
     note: { open: false, minimized: false },
     resume: { open: false, minimized: false },
-    sportify: { open: false, minimized: false },
+    spotify: { open: false, minimized: false },
+    mail: { open: false, minimized: false },
     cli: { open: false, minimized: false },
   });
 
@@ -54,7 +55,7 @@ const App = () => {
             setActiveWindow={setActiveWindow}
           />
         )}
-        {windowsState.sportify.open && (
+        {windowsState.spotify.open && (
           <Sportify
             windowName="sportify"
             windowState={windowsState.sportify}
