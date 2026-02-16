@@ -2,13 +2,19 @@ import Terminal from "react-console-emulator";
 import MacWindow from "./MacWindow";
 import "./cli.scss";
 
-const Cli = ({ windowName, windowState, isNewlyOpened, setActiveWindow, setWindowsState }) => {
+const Cli = ({
+  windowName,
+  windowState,
+  isNewlyOpened,
+  setActiveWindow,
+  setWindowsState,
+}) => {
   const commands = {
     about: {
       description: "Learn more about me",
       usage: "about",
       fn: () =>
-        "Hi 👋 I'm Nilesh, a frontend-focused developer who loves building clean UI and interactive experiences.",
+        "I am a software developer with a strong interest in problem solving and building efficient applications 💻✨. I enjoy improving my coding skills, working with programming concepts, and exploring new technologies 🚀. I have a logical and analytical mindset that helps me tackle challenges in a structured way 🧠. I am always focused on learning, growth, and creating practical solutions 📈😊..",
     },
 
     skills: {
@@ -21,20 +27,21 @@ const Cli = ({ windowName, windowState, isNewlyOpened, setActiveWindow, setWindo
       description: "View my featured projects",
       usage: "projects",
       fn: () =>
-        "• Task Manager App\n• E-commerce Website\n• Portfolio Website\n• Blog Platform\n• Weather App",
+        "• Productivity DashBoard\n• Web Based macOs Portfolio\n• SecretSite\n• Call Stack Manager",
     },
 
     contact: {
       description: "Get my contact details",
       usage: "contact",
       fn: () =>
-        "Email: nilesh@example.com\nGitHub: https://github.com/username\nLinkedIn: https://linkedin.com/in/username",
+        "Email: nileshshakhya01@gmail.com\nGitHub: https://github.com/Gireejesh-Nilesh\nLinkedIn: https://linkedin.com/in/gireejeshnilesh01professional",
     },
 
     resume: {
       description: "Get resume link",
       usage: "resume",
-      fn: () => "Resume: https://drive.google.com/your-resume-link",
+      fn: () =>
+        "Resume: https://drive.google.com/drive/home?dmr=1&ec=wgc-drive-%5Bmodule%5D-goto",
     },
 
     echo: {
@@ -45,7 +52,13 @@ const Cli = ({ windowName, windowState, isNewlyOpened, setActiveWindow, setWindo
   };
 
   return (
-    <MacWindow windowName={windowName} windowState={windowState} isNewlyOpened={isNewlyOpened} setActiveWindow={setActiveWindow} setWindowsState={setWindowsState}>
+    <MacWindow
+      windowName={windowName}
+      windowState={windowState}
+      isNewlyOpened={isNewlyOpened}
+      setActiveWindow={setActiveWindow}
+      setWindowsState={setWindowsState}
+    >
       <div className="cli-window">
         <Terminal
           commands={commands}
